@@ -1,0 +1,14 @@
+:root{
+  --primary-color: green;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  /* background-color: var(--primary-color); */
+}
