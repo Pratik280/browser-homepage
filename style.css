@@ -1,5 +1,26 @@
-:root{
+html{
   --primary-color: green;
+  font-size: 62.5%;
+  --header1: calc(1.5rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1rem + 1vw);
+  --big: calc(6rem + 1vw);
+  --special-color: #906272;
+  --background-color: #2e3440;
+  --text-color: #d8dee9;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("Roboto-Light.ttf");
 }
 
 *{
@@ -8,7 +29,40 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: var(--header1);
+  font-family: "Roboto-Regular", sans-serif;
+}
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: var(--text);
+}
+h2 {
+  font-size: var(--header2);
+}
+h3 {
+  font-size: var(--header3);
+}
+h4,
+h5 {
+  font-size: var(--header4);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 body{
-  /* background-color: var(--primary-color); */
+  font-family: "Roboto-Light", sans-serif;
+  background-color: var(--background-color);
+  font-weight: 800;
 }
