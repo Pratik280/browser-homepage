@@ -1,3 +1,4 @@
+/* DEFAULT STYLES */
 html{
   --primary-color: green;
   font-size: 62.5%;
@@ -61,8 +62,19 @@ ul {
 a {
   text-decoration: none;
 }
+
+
 body{
   font-family: "Roboto-Light", sans-serif;
   background-color: var(--background-color);
   font-weight: 800;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
 }
