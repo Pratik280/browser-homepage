@@ -1,35 +1,34 @@
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+
 :root{
 
   /* ==== colors is hsl ==== */
-  --clr-primary-one: hsl(219, 28%, 88%);
-  --clr-primary-two: hsl(220, 16%, 22%);
-
-  /* --clr-secondary-one: hsl(,,); */
-  /* --clr-secondary-two: hsl(,,); */
+  --clr-font-primary: hsl(218, 27%, 92%);
+  --clr-bg-dark: hsl(220, 16%, 22%);
+  --clr-bg-light: hsl(222, 16%, 28%);
+  --clr-bg-very-light: hsl(213, 32%, 52%);
 
   /* font */
   font-size: 62.5%;
 
-  @font-face {
-    font-family: "Roboto";
-    src: url("Roboto-Regular.ttf");
-  }
+  --ff-primary: "Poppins Regular", sans-serif;
+  --ff-secondary: "Poppins Bold", sans-serif;
 
-  @font-face {
-    font-family: "Roboto-Light";
-    src: url("Roboto-Light.ttf");
-  }
-
-  --ff-primary: 'Roboto', sans-serif;
-  --ff-secondary: 'Roboto-Light', sans-serif;
-
-  /* --fs-900: clamp(); */
-  --fs-700: clamp(3.5rem, 5vw, 5rem);
-
-  --fs-400: clamp(1.2rem, 1.25vw, 1rem);
+  /* --fs-500: clamp(1.5rem, 2vw, 1.65rem); */
+  --fs-700: clamp(1.8rem, 1.25vw, 2.2rem);
+  --fs-400: clamp(1.4rem, 1.25vw, 1.6rem);
 
   scroll-behavior : smooth;
 }
+
 
 *,
 *::before,
@@ -39,9 +38,10 @@
   box-sizing: border-box;
 }
 
-.conatainer{
+.container{
   margin-inline: auto;
-  width: min(90%, 110rem);
+  /* width: min(90%, 120rem); */
+  width: min(90%, 80vw);
 }
 
 .flex-center{
@@ -50,18 +50,18 @@
   align-items: center;
 }
 
-main,
-header,
-section {
-  padding: 1.5rem 0;
-  @media (min-width: 40em) {
-    main,
-    header,
-    section {
-      padding: 7rem 0;
-    }
-  }
-}
+/* main, */
+/* header, */
+/* section { */
+/*   padding: 1.5rem 0; */
+/*   @media (min-width: 40em) { */
+/*     main, */
+/*     header, */
+/*     section { */
+/*       padding: 7rem 0; */
+/*     } */
+/*   } */
+/* } */
 
 a{
   text-decoration: none;
@@ -117,12 +117,8 @@ img{
 }
 
 /* font-color */
-.fc-primary-one{
-  color: var(--clr-primary-one);
-}
-
-.fc-primary-two{
-  color: var(--clr-primary-two);
+.fc-primary{
+  color: var(--clr-font-primary);
 }
 
 /* font-size */
@@ -143,6 +139,14 @@ img{
 }
 
 /* background-color */
+.bg-primary-one{
+  background: var(--clr-bg-dark);
+}
+
 .bg-primary-two{
-  background: var(--clr-primary-two);
+  background: var(--clr-bg-light);
+}
+
+.bg-primary-three{
+  background: var(--clr-bg-very-light);
 }
