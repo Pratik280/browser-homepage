@@ -7,6 +7,14 @@ main{
   grid-gap: 1.5rem;
 }
 
+/* .body { */
+/*   background: url('../assets/images/03-min.png'); */
+/*   background: url('../assets/images/02-min.jpg'); */
+/*   background-repeat: no-repeat; */
+/*   background-position: center; */
+/*   background-size: cover; */
+/* } */
+
 section{
   border-radius: 1rem;
 }
