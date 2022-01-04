@@ -1,13 +1,3 @@
-@font-face {
-  font-family: "Poppins Regular";
-  src: url("../assets/fonts/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Poppins Bold";
-  src: url("../assets/fonts/Poppins-Bold.ttf");
-}
-
 :root{
 
   /* ==== colors is hsl ==== */
@@ -19,16 +9,27 @@
   /* font */
   font-size: 62.5%;
 
-  --ff-primary: "Poppins Regular", sans-serif;
-  --ff-secondary: "Poppins Bold", sans-serif;
+  --ff-primary:  sans-serif;
+  --ff-secondary: sans-serif;
 
   /* --fs-500: clamp(1.5rem, 2vw, 1.65rem); */
-  --fs-700: clamp(1.8rem, 1.25vw, 2.2rem);
-  --fs-400: clamp(1.4rem, 1.25vw, 1.6rem);
+  --fs-700: clamp(1.8rem, 1.25vw + 1rem, 2.2rem);
+  --fs-400: clamp(1.4rem, 1.25vw + 1rem, 1.6rem);
 
   scroll-behavior : smooth;
 }
 
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+.sans {
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.monospace, pre {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
 
 *,
 *::before,
