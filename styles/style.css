@@ -1,4 +1,154 @@
-@import "default.css" ;
+:root{
+
+  /* ==== colors is hsl ==== */
+  --clr-font-primary: hsl(218, 27%, 92%);
+  --clr-bg-dark: hsl(220, 16%, 22%);
+  --clr-bg-light: hsl(222, 16%, 28%);
+  --clr-bg-very-light: hsl(213, 32%, 52%);
+/* font */ font-size: 62.5%;
+
+  --ff-primary:  sans-serif;
+  --ff-secondary: sans-serif;
+
+  /* --fs-500: clamp(1.5rem, 2vw, 1.65rem); */
+  --fs-700: clamp(1.8rem, 1.25vw + 1rem, 2.2rem);
+  --fs-400: clamp(1.4rem, 1.25vw + 1rem, 1.6rem);
+
+  scroll-behavior : smooth;
+}
+
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+.sans {
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.monospace, pre {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  margin-inline: auto;
+  /* width: min(90%, 120rem); */
+  width: min(90%, 80vw);
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main, */
+/* header, */
+/* section { */
+/*   padding: 1.5rem 0; */
+/*   @media (min-width: 40em) { */
+/*     main, */
+/*     header, */
+/*     section { */
+/*       padding: 7rem 0; */
+/*     } */
+/*   } */
+/* } */
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* ==== TYPOGRAPHY ==== */
+
+/* font-family */
+.ff-primary{
+  font-family: var(--ff-primary);
+}
+
+.ff-secondary{
+  font-family: var(--ff-secondary);
+}
+
+/* font-weight */
+.fw-100{
+  font-weight: 100;
+}
+
+.fw-400{
+  font-weight: 400;
+}
+
+.fw-500{
+  font-weight: 500;
+}
+
+.fw-700{
+  font-weight: 700;
+}
+
+.fw-900{
+  font-weight: 900;
+}
+
+/* line-height */
+.lh-16{
+  line-height: 1.6;
+}
+
+.lh-1{
+  line-height: 1;
+}
+
+/* font-color */
+.fc-primary{
+  color: var(--clr-font-primary);
+}
+
+/* font-size */
+.fs-400{
+  font-size: var(--fs-400);
+}
+
+.fs-500{
+  font-size: var(--fs-500);
+}
+
+.fs-700{
+  font-size: var(--fs-700);
+}
+
+.fs-900{
+  font-size: var(--fs-900);
+}
+
+/* background-color */
+.bg-primary-one{
+  background: var(--clr-bg-dark);
+}
+
+.bg-primary-two{
+  background: var(--clr-bg-light);
+}
+
+.bg-primary-three{
+  background: var(--clr-bg-very-light);
+}
 
 main{
   padding: 10rem 0rem;
