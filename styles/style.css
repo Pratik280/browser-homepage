@@ -153,7 +153,7 @@ img{
 main{
   padding: 10rem 0rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 1.5rem;
 }
 
@@ -164,10 +164,16 @@ section{
 section h1{
   padding-top: 2.5rem;
   padding-bottom: 1.25rem;
-  padding-left: 3rem;
+  padding-left: 3.5rem;
 }
 
 section ul{
-  padding-inline: 3rem;
+  padding-inline: 3.5rem;
   padding-bottom: 3rem;
+}
+
+.cols-2{
+  columns: 2 10rem;
+  column-gap: 4rem;
+  column-rule: 1px solid var(--clr-font-primary);
 }
