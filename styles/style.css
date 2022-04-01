@@ -2,8 +2,8 @@
 
   /* ==== colors is hsl ==== */
   --clr-font-primary: hsl(218, 27%, 92%);
-  --clr-bg-dark: hsl(220, 16%, 22%);
-  --clr-bg-light: hsl(222, 16%, 28%);
+  --clr-bg-dark: #232323;
+  --clr-bg-light: #1E1E1E;
   --clr-bg-very-light: hsl(213, 32%, 52%);
 /* font */ font-size: 62.5%;
 
