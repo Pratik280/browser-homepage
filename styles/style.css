@@ -1,9 +1,9 @@
 :root{
 
   /* ==== colors is hsl ==== */
-  --clr-font-primary: hsl(218, 27%, 92%);
-  --clr-bg-dark: #232323;
-  --clr-bg-light: #1E1E1E;
+  --clr-font-primary: #cad3f5;
+  --clr-bg-dark: #24273a;
+  --clr-bg-light: #1e2030;
   --clr-bg-very-light: hsl(213, 32%, 52%);
 /* font */ font-size: 62.5%;
 
