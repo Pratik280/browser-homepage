@@ -185,3 +185,9 @@ section ul{
   column-gap: 4rem;
   column-rule: 1px solid var(--clr-font-primary);
 }
+
+.cols-3{
+  columns: 3 10rem;
+  column-gap: 4rem;
+  column-rule: 1px solid var(--clr-font-primary);
+}
